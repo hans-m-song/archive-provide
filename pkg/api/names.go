@@ -25,7 +25,6 @@ func listNamesHandler(provider *provide.Provider, table string) HandlerFunction 
 		}
 
 		rw.WriteHeader(http.StatusOK)
-		headerJsonContent(rw)
 		fmt.Fprintf(rw, "%s", content)
 	}
 }
